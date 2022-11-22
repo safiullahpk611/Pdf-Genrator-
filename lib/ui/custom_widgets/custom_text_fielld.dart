@@ -9,7 +9,7 @@ class CustomTextFields extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height:65,
+      // height:65,
       width: 200,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),

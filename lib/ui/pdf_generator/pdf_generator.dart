@@ -125,116 +125,46 @@ Future<Uint8List> generatedPdf(final PdfPageFormat format) async {
                           )),
                     ]),
                     pw.SizedBox(height: 20),
-                    pw.GridView(
-                      crossAxisCount: 3,
-                      childAspectRatio: 2/3,
-                      crossAxisSpacing: 3,
 
-
-                      children: [
-
-                        pw.Table(
-
-                            border: pw.TableBorder.all(
-                                color: PdfColor.fromHex("#000000"),
-                                style: pw.BorderStyle.solid,
-                                width: 2),
-                            children: [
-                              pw.TableRow(children: [
-                                pw.Text(
-                                  'SNO ',
-                                  style: pw.TextStyle(
-                                    fontSize: 18.0,
-                                    fontWeight: pw.FontWeight.bold,
-                                  ),
-                                  textAlign: pw.TextAlign.center,
-                                ),
-                                pw.Text(
-                                  'Item Description',
-                                  style: pw.TextStyle(
-                                    fontSize: 18.0,
-                                    fontWeight: pw.FontWeight.bold,
-                                  ),
-                                  textAlign: pw.TextAlign.center,
-                                ),
-                                pw.Text(
-                                  'Price (USD)',
-                                  style: pw.TextStyle(
-                                    fontSize: 18.0,
-                                    fontWeight: pw.FontWeight.bold,
-                                  ),
-                                  textAlign: pw.TextAlign.center,
-                                ),
-                              ]),
-
-
-
-
-
-
-
-                              tableRow(
-                                  sNo: sNoController.text, itemDes: featureController.text, price: budgetController.text),
-
-
-
-                            ]),
-
-
-
-
-
-                      ]
-
-                    ),
                     pw.Container(
-                        padding: pw.EdgeInsets.symmetric(vertical: 20),
-                        child: pw.Table(
-
-                            border: pw.TableBorder.all(
-                                color: PdfColor.fromHex("#000000"),
-                                style: pw.BorderStyle.solid,
-                                width: 2),
-                            children: [
-                              pw.TableRow(children: [
-                                pw.Text(
-                                  'SNO ',
-                                  style: pw.TextStyle(
-                                    fontSize: 18.0,
-                                    fontWeight: pw.FontWeight.bold,
-                                  ),
-                                  textAlign: pw.TextAlign.center,
+                      padding: pw.EdgeInsets.symmetric(vertical: 20),
+                      child: pw.Table(
+                          border: pw.TableBorder.all(
+                              color: PdfColor.fromHex("#000000"),
+                              style: pw.BorderStyle.solid,
+                              width: 2),
+                          children: [
+                            pw.TableRow(children: [
+                              pw.Text(
+                                'SNO ',
+                                style: pw.TextStyle(
+                                  fontSize: 18.0,
+                                  fontWeight: pw.FontWeight.bold,
                                 ),
-                                pw.Text(
-                                  'Item Description',
-                                  style: pw.TextStyle(
-                                    fontSize: 18.0,
-                                    fontWeight: pw.FontWeight.bold,
-                                  ),
-                                  textAlign: pw.TextAlign.center,
+                                textAlign: pw.TextAlign.center,
+                              ),
+                              pw.Text(
+                                'Item Description',
+                                style: pw.TextStyle(
+                                  fontSize: 18.0,
+                                  fontWeight: pw.FontWeight.bold,
                                 ),
-                                pw.Text(
-                                  'Price (USD)',
-                                  style: pw.TextStyle(
-                                    fontSize: 18.0,
-                                    fontWeight: pw.FontWeight.bold,
-                                  ),
-                                  textAlign: pw.TextAlign.center,
+                                textAlign: pw.TextAlign.center,
+                              ),
+                              pw.Text(
+                                'Price (USD)',
+                                style: pw.TextStyle(
+                                  fontSize: 18.0,
+                                  fontWeight: pw.FontWeight.bold,
                                 ),
-                              ]),
-
-
-
-
-
-
-
-                                tableRow(
-                                    sNo: sNoController.text, itemDes: featureController.text, price: budgetController.text),
-
-
-
+                                textAlign: pw.TextAlign.center,
+                              ),
                             ]),
+                            tableRow(
+                                sNo: sNoController.text,
+                                itemDes: featureController.text,
+                                price: budgetController.text),
+                          ]),
                     )
                   ])
             ]),

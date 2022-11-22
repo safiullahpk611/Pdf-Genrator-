@@ -19,7 +19,7 @@ class CustomButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(buttonName,style: TextStyle(fontSize: 16,color: Colors.white),),
+              Expanded(child: Text(buttonName,style: TextStyle(fontSize: 16,color: Colors.white),)),
               InkWell(child: Icon(myICon,color:Colors. white,),
               onTap:onPressed ,
               )

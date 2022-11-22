@@ -13,6 +13,7 @@ TextEditingController sNoController= TextEditingController();
 TextEditingController featureController=TextEditingController();
 TextEditingController costController= TextEditingController();
 class HomeScreenProvider extends ChangeNotifier {
+  final formKey = GlobalKey<FormState>();
 int onTapValue=0;
 int estimateTimeLine=0;
 int deleverableTabel=0;
